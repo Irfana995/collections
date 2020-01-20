@@ -39,7 +39,7 @@ public class Register
 		System.out.print("Enter your address:");
 		address=s.next();
 		System.out.print("Enter your Contact Number:");
-	    	contactno=s.nextInt();
+	    contactno=s.nextInt();
 		System.out.print("Enter your E-Mail ID:");
 		emailid=s.next();
 		Student s1=new Student(name,address,contactno,emailid);

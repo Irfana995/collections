@@ -1,40 +1,32 @@
-package comparator;
+package Set1;
 
-
-public class Employee
-{
-	private String name;
-	private int age;
-	public String getName()
+	public class Employee implements Comparable<Employee>
 	{
-		return name;
-	}
-	public void setName(String name)
-	{
-		this.name=name;
-	}
-	public int getAge()
-	{
-		return age;
-	}
-	public void setAge(int age)
-	{
-		this.age=age;
-	}
-	public int compareTo(Employee e)
-	{
-		if(age>e.getAge())
+		private String name;
+		private int age;
+		public String getName()
 		{
-			return 1;
+			return name;
 		}
-		else if(age<e.getAge())
+		public void setName(String name)
 		{
-			return -1;
+			this.name=name;
 		}
-		else
+		public int getAge()
 		{
+			return age;
+		}
+		public void setAge(int age)
+		{
+			this.age=age;
+		}
+		@Override
+		public int compareTo(Employee o)
+		{
+			// TODO Auto-generated method stub
 			return 0;
 		}
+
 	}
 
-}
+
